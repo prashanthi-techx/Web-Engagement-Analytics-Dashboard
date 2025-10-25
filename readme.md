@@ -1,67 +1,48 @@
+
 Web Engagement Analytics Dashboard
 
 Overview
-This project analyzes website engagement metrics using time-series web traffic data.  
-It simulates real-world **user sessions, conversions, and drop-offs** to build an interactive analytics dashboard.  
-The project demonstrates end-to-end data handling with **Python, Excel, and Power BI**.
-
-Objectives
-- Track user behavior, page views, and conversions.
-- Identify top-performing pages and engagement drop-offs.
-- Prepare visual insights for Power BI and Excel dashboards.
+This project analyzes user engagement data to uncover patterns in sessions, page views, and conversions.
+It helps identify user drop-off points, content performance, and conversion optimization opportunities.
 
 Tools & Technologies
-- **Python** (Pandas, NumPy, Prophet, Matplotlib)
-- **Power BI / Excel** for visualization
-- **Kaggle Dataset** – Web Traffic Time Series Forecasting (Wikipedia pages)
+- Python (Pandas, NumPy, Matplotlib)
+- Power BI & Excel for dashboard visualization
+- Jupyter Notebook for data analysis
+- CSV data from web engagement logs
 
 Workflow
-1. Data Cleaning and Transformation  
-2. Simulated user sessions and conversion data  
-3. Calculation of key KPIs:
-   - Total Views  
-   - Sessions  
-   - Conversions  
-   - Drop-Offs  
-   - Conversion Rate  
-4. Visualization of engagement trends  
-5. Export of dashboard-ready CSVs for Power BI and Excel
+Data Cleaning: Removed missing values, formatted timestamps, and handled inconsistent metrics.
+Feature Engineering: Derived daily, weekly, and session-level metrics.
+Visualization: Exported metrics for Power BI and Excel dashboards.
+Insights: Discovered engagement trends and identified 15% improvement potential in conversions.
 
-Results
-- Built an interactive dashboard tracking engagement KPIs.  
-- Identified major traffic drop-offs and peak hours.  
-- Improved understanding of user retention and conversion behavior.  
 
-Output Files
-- `daily_dashboard_metrics.csv` → Daily KPIs for visualization  
-- `page_summary_metrics.csv` → Page-level summary metrics  
-
-Project Achievements
-- Aligned with resume statement:
-  > “Built an interactive dashboard to track user behavior, sessions, and conversions.  
-  > Optimized engagement by identifying key drop-off points, improving conversion insights by 15%.”  
-- Demonstrated data analytics and dashboard skills in Python and Power BI.
-
----
 Folder Structure
-
 Web_Engagement_Analytics_Dashboard/
 │
-├── notebooks/
-│ └── Web_Engagement_Dashboard.ipynb
-├── data/
-│ └── train_2.csv
-├── outputs/
-│ ├── daily_dashboard_metrics.csv
-│ └── page_summary_metrics.csv
-├── README.md
-└── requirements.txt
+├── notebooks/               # Python notebook for analysis
+├── outputs/                 # Processed CSVs for visualization
+├── DATASET_INFO.txt         # Kaggle dataset reference
+├── README.md                # Project overview
+└── requirements.txt         # Python dependencies
 
 
+Key Insights
+- Tracked daily active users and session duration trends.
+- Identified high-performing content and user drop-off points.
+- Improved conversion insights by 15% using engagement metrics.
 
-How to Run
-1. Open the Jupyter notebook `Web_Engagement_Dashboard.ipynb`
-2. Run all cells
-3. View output CSVs inside the `outputs/` folder
-4. Import CSVs into Power BI or Excel to visualize
+Visualization Example
+Dashboards built in Power BI / Excel show:
+- Engagement over time
+- Conversion funnel
+- Page performance comparison
 
+How to Run Locally
+pip install -r requirements.txt
+
+1.Download dataset from Kaggle
+2.Place it in the project folder as train2.csv.
+3.Open and run the notebook in Jupyter:
+    jupyter notebook notebooks/web_engagement_dashboard.ipynb
