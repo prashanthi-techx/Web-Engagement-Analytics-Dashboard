@@ -19,13 +19,13 @@ Insights: Discovered engagement trends and identified 15% improvement potential 
 
 
 Folder Structure
-Web_Engagement_Analytics_Dashboard/
-│
-├── notebooks/               # Python notebook for analysis
-├── outputs/                 # Processed CSVs for visualization
-├── DATASET_INFO.txt         # Kaggle dataset reference
-├── README.md                # Project overview
-└── requirements.txt         # Python dependencies
+Web_Engagement_Analytics_Dashboard
+
+- notebooks/               # Python notebook for analysis
+- outputs/                 # Processed CSVs for visualization
+- DATASET_INFO.txt         # Kaggle dataset reference
+- README.md                # Project overview
+- requirements.txt         # Python dependencies
 
 
 Key Insights
@@ -46,3 +46,4 @@ pip install -r requirements.txt
 2.Place it in the project folder as train2.csv.
 3.Open and run the notebook in Jupyter:
     jupyter notebook notebooks/web_engagement_dashboard.ipynb
+
