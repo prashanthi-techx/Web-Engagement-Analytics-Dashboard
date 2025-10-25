@@ -1,0 +1,4 @@
+Dataset too large to upload to GitHub (25 MB).
+Please download manually from Kaggle:
+https://www.kaggle.com/competitions/web-traffic-time-series-forecasting/data
+Save it as 'train2.csv' in the project folder before running the notebook.
